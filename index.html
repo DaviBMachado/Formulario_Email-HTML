@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Entre em contato</title>
+</head>
+
+<body>
+    <main>
+        <section class="form">
+            <section class="ttl-form">
+                <h1 id="ttl-cadastro">Cadastre-se e receba uma proposta de adesão ao nosso programa, ou se preferir contate um de nossos
+                    consultores pelo WhatsApp (11) 98878-6922</h1>
+            </section>
+            <section class="row">
+                <form class="formulario" action="https://formsubmit.co/7e9ebe4c2d40d0229058854aac500571" method="POST">
+                    
+                    <div class="inputs">
+                        <label for="empresa">Empresa</label>
+                        <input type="text" name="empresa" required placeholder="Empresa">
+                        <label for="name">Nome</label>
+                        <input type="text" name="name" required placeholder="Nome">
+                        <label for="email">Coloque seu e-mail</label>
+                        <input type="text" name="email" required placeholder="E-mail">
+                        <div class="classificacaoEmpresa">
+                            <div class="qtd">
+                                <label for="qtd-funcionario">Nº de Funcionários na empresa</label>
+                                <input type="number" name="qtd-funcionario" required id="qtd-funcionario" placeholder="Quantidade de Funcionários">
+                            </div>
+                            <div class="classificacao">
+                                <label for="tipoEmpresa" id="classifique">Classifique sua empresa</label>
+                                <select name="tipoEmpresa" id="tipoEmpresa">
+                                    <option value="Comércio">Comércio</option>
+                                    <option value="Prestador de Serviço">Prestador de Serviço</option>
+                                    <option value="Indústria">Indústria</option>
+                                    <option value="Clínicas/Hospitais">Clínicas/Hospitais</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="contatoEmpresa">
+                            <div class="seuSite">
+                                <label for="site">Site</label>
+                                <input type="text" name="site" required id="site">
+                            </div>
+                            <div class="zapZap">
+                                <label for="whats">WhatsApp</label>
+                                <input type="text" name="whats" required id="whats">
+                            </div>
+                        </div>
+                        <label for="cnpj">CNPJ</label>
+                        <input type="text" name="cnpj" required id="cnpj">
+                        <label for="subject">Qual o motivo do seu contato</label>
+                        <input type="text" name="subject" required placeholder="Assunto">
+                        <label for="phone">Número para contato</label>
+                        <input type="text" name="phone" placeholder="Número de telefone">
+                        <div class="mensagem">
+                            <label for="msg">Descreva aqui o motivo do contato com mais detalhes</label>
+                            <textarea name="msg" required placeholder="Mensagem"></textarea>
+                        </div>
+                        <div class="btn-form">
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+                <section class="img-form">
+                    <h2>nossa certificação atende 11 dos 17 ODS</h2>
+                    <img src="src/img/17-ods.png" alt="">
+                </section>
+            </section>
+            
+        </section>
+    </main>
+</body>
+
+</html>

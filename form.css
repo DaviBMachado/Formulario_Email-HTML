@@ -1,171 +1,237 @@
-*{
+* {
     font-family: Arial, Helvetica, sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     width: 100%;
     height: 100vh;
 }
-main{
-    background-color: #A6CE39;
+
+main {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.form{
+
+.form {
     background-color: #3e6f37;
     width: fit-content;
-    height: 90%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 1%;
 }
 
-.row{
+.row {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    border-radius: 10px;
 }
-.ttl-form{
+
+.ttl-form {
     width: 50%;
     font-size: 1.5rem;
     color: #ffffff;
     text-align: center;
+    margin-bottom: 1%;
 }
-.formulario{
+
+.formulario {
     display: flex;
     flex-direction: column;
-    align-items: center;   
+    align-items: center;
 }
-.inputs{
+
+.inputs {
     background-color: rgb(172, 200, 97);
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
     justify-items: start;
+    border-radius: 10px 0 0 10px;
 }
-.inputs label{
-    color: #ffffff;
+
+.inputs label {
+    color: #000000;
     margin: 0 0 0 1%;
     font-size: 1.2rem;
 }
-input{
+
+input {
     width: 80%;
-    margin:  0 0 0 1%;
+    height: 100%;
+    margin: 0 0 0 1%;
 }
-input,select,textarea{
+
+input,
+select,
+textarea {
     border-radius: 7px;
     border: none;
 }
+
 input::placeholder {
-    font: 1.25rem/3 sans-serif;
+    font: 1rem/3 sans-serif;
     color: gray;
 }
-.classificacaoEmpresa /*div pai geral*/{
+
+.classificacaoEmpresa
+
+/*div pai geral*/
+    {
     width: 100%;
     height: 10%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    margin-bottom: 10%;
 }
-.classificacaoEmpresa .qtd /*div pai geral + div primeiro input*/{
+
+.classificacaoEmpresa .qtd
+
+/*div pai geral + div primeiro input*/
+    {
     margin: 0 1% 0 0;
     width: 60%;
     display: flex;
     flex-direction: column;
 }
-.classificacaoEmpresa .qtd #qtd-funcionario{/*div pai geral + div primeiro input + id primeiro input*/
+
+.classificacaoEmpresa .qtd #qtd-funcionario {
+    /*div pai geral + div primeiro input + id primeiro input*/
     width: 100%;
-    height: 4vh;
+    height: 3vh;
 }
-.classificacaoEmpresa .classificacao /*div pai geral + div segundo input*/{
+
+.classificacaoEmpresa .classificacao
+
+/*div pai geral + div segundo input*/
+    {
     width: 40%;
     display: flex;
     flex-direction: column;
 }
-.classificacaoEmpresa .classificacao #classifique{
+
+.classificacaoEmpresa .classificacao #classifique {
     font-size: 1.25rem;
 }
-.classificacaoEmpresa .classificacao #tipoEmpresa /*div pai geral + div segundo input + id segundo input*/{
+
+.classificacaoEmpresa .classificacao #tipoEmpresa
+
+/*div pai geral + div segundo input + id segundo input*/
+    {
     width: 90%;
     height: 100%;
     margin: 0 1.5% 0 0;
 }
+
 /*SEPARAÇÃO*/
 
-.contatoEmpresa /*div pai geral*/{
+.contatoEmpresa
+
+/*div pai geral*/
+    {
     width: 100%;
     height: 10%;
     display: flex;
     flex-direction: row;
     margin: 3% 0 0 0;
 }
-.contatoEmpresa .seuSite /*div pai geral + div primeiro input*/{
+
+.contatoEmpresa .seuSite
+
+/*div pai geral + div primeiro input*/
+    {
     margin: 0 1% 0 0;
     width: 60%;
     display: flex;
     flex-direction: column;
 }
-.contatoEmpresa .seuSite #site{/*div pai geral + div primeiro input + id primeiro input*/
+
+.contatoEmpresa .seuSite #site {
+    /*div pai geral + div primeiro input + id primeiro input*/
     width: 100%;
-    height: 4vh;
+    height: 3vh;
 }
-.contatoEmpresa .zapZap /*div pai geral + div segundo input*/{
+
+.contatoEmpresa .zapZap
+
+/*div pai geral + div segundo input*/
+    {
     width: 40%;
     display: flex;
     flex-direction: column;
-    margin: 0 1% 0 0 ;
+    margin: 0 1% 0 0;
 }
-.contatoEmpresa .zapZap #whats /*div pai geral + div segundo input + id segundo input*/{
+
+.contatoEmpresa .zapZap #whats
+
+/*div pai geral + div segundo input + id segundo input*/
+    {
     width: 100%;
-    height: 60%;
+    height: 50%;
 }
-.mensagem{
+
+.mensagem {
     display: flex;
     flex-direction: column;
 }
-textarea{   
-    margin:  0 0 0 1%;
+
+textarea {
+    margin: 0 0 0 1%;
 }
-textarea,
-textarea::placeholder {
-    font: 1.25rem/3 sans-serif;
-}
-select,
-select::placeholder {
-    font: 1rem/3 sans-serif;
+
+select {
     color: grey;
 }
-.btn-form{
+
+select,
+textarea {
+    font: 1.25rem/ 3 sans-serif;
+}
+
+textarea::placeholder,
+select::placeholder {
+    font: 1.5rem/3 sans-serif;
+}
+
+.btn-form {
     width: 100%;
     display: flex;
     justify-content: center;
 }
-button{
+
+button {
     width: 50%;
     font-size: 1.5rem;
     margin: 2.3%;
 
 }
-.img-form{
-    width: 50%;
+
+.img-form {
+    width: 60%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color:rgba(172, 200, 97, 0.5);
+    background-color: rgba(172, 200, 97, 0.5);
+    border-radius: 0 10px 10px 0;
 }
-.img-form h2{
+
+.img-form h2 {
     color: white;
     text-transform: uppercase;
 }
-.img-form img{
+
+.img-form img {
     width: 100%;
-    height: 60%;
+    height: 80%;
 }

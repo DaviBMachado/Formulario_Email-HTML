@@ -212,7 +212,12 @@ button {
     width: 50%;
     font-size: 1.5rem;
     margin: 2.3%;
-
+    border: none;
+    border-radius: 20px;
+    background-color: #8fbe39;
+}
+button:hover{
+    background-color: #3e6f37;
 }
 
 .img-form {
@@ -222,7 +227,7 @@ button {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgba(172, 200, 97, 0.5);
+    background-color: rgba(188, 240, 45, 0.708);
     border-radius: 0 10px 10px 0;
 }
 
